@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			
+			<META http-equiv="Expires" content="-1">
+			<META http-equiv="Progme" content="no-cache">
+			<META http-equiv="Cache-Control" content="No-Cache">
+			
+			<title>Insert title here</title>
+			
+			<script type="text/javascript">			
+				function aprint()
+				{
+					var xprint = document.getElementById("print");
+					var number = document.getElementById("number").value;
+					var star_numbers = 1;
+					
+					xprint.innerHTML = "";
+					
+					for(var i = 0; i < number; i++)
+					{
+						for(var k = 0; k < number - i - 1; k++)
+						{
+							xprint.innerHTML += "&nbsp;"
+						}
+						for(var j = 0; j < star_numbers; j++)
+						{
+							xprint.innerHTML += "*";
+						}
+						xprint.innerHTML += "<br>";
+						star_numbers = star_numbers + 2; 
+					}
+				}
+			</script>
+		</head>
+		<body>
+			<form name="text">
+				<input type="text" value="2" id="number" style="width:100px;"/>
+				<input type="button" value="별표출력" onclick="aprint();"/>
+			</form>
+			<div id="print"></div>
+		</body>
+	</html>
