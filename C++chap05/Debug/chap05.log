@@ -1,0 +1,3 @@
+﻿  복습.c
+d:\c++\c언어 연습\chap05\복습.c(12): warning C4244: '초기화 중': 'double'에서 'const int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  chap05.vcxproj -> D:\C++\C언어 연습\Debug\chap05.exe
