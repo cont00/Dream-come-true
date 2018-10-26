@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mappers">
+
+	<select id="selectAllfreeBoard"
+		parameterType="com.munggu.org.freeboard.Page"  
+		resultType="com.munggu.org.freeboard.FreeBoardDTO">
+		select * from freeboard
+		order by idx desc
+		limit ${rownum},10
+	</select>
+	
+	<select id="selectCntfreeBoard" resultType="java.lang.Integer">
+		select count(*) from freeboard;	
+	</select>
+	
+	<select id="selectOne" parameterType="com.munggu.org.freeboard.FreeBoardDTO" resultType="com.munggu.org.freeboard.FreeBoardDTO">
+		select * from freeboard
+		where idx = ${idx};	
+	</select>
+	    
+</mapper>
