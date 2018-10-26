@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="EUC-KR">
+
+			<META http-equiv="Expires" content="-1"> 
+			<META http-equiv="Pragma" content="no-cache"> 
+			<META http-equiv="Cache-Control" content="No-Cache"> 
+			
+			<title>Insert title here</title>
+			<script type="text/javascript">
+				var fmenu1 = function()
+				{
+// 					alert("메인메뉴1번 ");
+					var sdiv1 = document.getElementById("sdiv1");
+					var main_li1 = document.getElementById("mainmenu1")
+// 					alert(sdiv1);
+					if(sdiv1.style.display == "block")
+					{
+						main_li1.style.backgroundColor = "green";
+						sdiv1.style.display = "none";
+						main_li1.innerHTML = "메인메뉴1 닫힘";
+					}
+					else
+					{
+						main_li1.style.backgroundColor = "red";
+						sdiv1.style.display = "block";
+						main_li1.innerHTML = "메인메뉴2 열림";
+					}
+					
+				}
+				var fmenu2 = function()
+				{
+// 					alert("메인메뉴2번 ");
+					var sdiv2 = document.getElementById("sdiv2");
+					var main_li2 = document.getElementById("mainmenu2")
+// 					alert(sdiv2);
+					main_li2.style.backgroundColor = "red";
+					if(sdiv2.style.display == "block")
+					{
+						main_li2.style.backgroundColor = "green";
+						sdiv2.style.display = "none";
+						main_li2.innerHTML = "메인메뉴2 닫힘";
+					}
+					else
+					{
+						main_li2.style.backgroundColor = "red";
+						sdiv2.style.display = "block";
+						main_li2.innerHTML = "메인메뉴2 열림";
+					}
+				}
+			</script>
+			<style type="text/css">
+				li
+				{
+					cursor: pointer;
+				}
+				li:hover
+				{
+					background: #ccc
+				}
+				#sdiv1
+				{
+					display: none;
+				}
+				#sdiv2
+				{
+					display: none;
+				}
+			</style>
+			
+		</head>
+		<body>
+			<div id = "fdiv">
+				<ul>
+					<li id="mainmenu1" onclick="fmenu1();">메인메뉴1</li>
+					<li id="mainmenu2" onclick="fmenu2();">메인메뉴2</li>
+				</ul>
+			</div>
+			
+			<div id = "sdiv1">
+				<img src = "kano.jpg" width = "300">
+			</div>
+			
+			<div id = "sdiv2">
+				<img src = "redwimps.jpg" width = "300">
+			</div>
+		</body>
+	</html>

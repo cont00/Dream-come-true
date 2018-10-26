@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="EUC-KR">
+
+			<META http-equiv="Expires" content="-1">
+			<META http-equiv="Pragma" content="no-cache">
+			<META http-equiv="Cache-Control" content="No-Cache">
+			
+			<title>Insert title here</title>
+			
+			<script type="text/javascript">
+				// 매개변수가 없고 리턴값도 없는 함수
+				function fn1()
+				{
+					alert("fn1");
+				}
+				
+				// 매개변수가 없고 리턴값이 있는 함수
+				function fn2()
+				{
+					return "fn2";
+				}
+				
+				// 매개변수가 있고 리턴값이 없는 함수
+				function fn3(x)
+				{
+					alert(x);
+				}
+				
+				// 매개변수가 있고 리턴값도 있는 함수
+				function fn4(y)
+				{
+					return y*y;
+				}
+				
+				// ex02.html 파일을 작성해서
+				// 함수 add(), sub(), mul(), divide()
+				// input 태그에 숫자를 넣고 
+			</script>
+			
+		</head>
+		<body>
+		
+			<button onclick = "fn1()">함수1</button>
+			<button onclick = "alert(fn2())">함수2</button>
+			<button onclick = "fn3('매개변수')">함수3</button>
+			<button onclick = "alert(fn4(5))">함수4</button>
+		
+		</body>
+	</html>

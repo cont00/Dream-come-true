@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="EUC-KR">
+			<title>Insert title here</title>
+			<script type="text/javascript">
+			
+				window.onload = function()
+				{
+					var num = prompt("단수 입력 : ","");
+					var targetdiv = document.getElementById("printdiv");
+					var gugudan = "";
+					
+					for (var i=1; i<10; i++)
+					{
+						gugudan += num + "*" + i + "=" + (Number(num)*i)+"<br>";
+					}
+					targetdiv.innerHTML = gugudan;
+				}
+				
+			</script>
+		</head>
+		<body>
+			<div id="printdiv"></div>
+		</body>
+	</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="EUC-KR">
+			<title>Insert title here</title>
+			
+			<script type="text/javascript">
+			
+// 			문제3
+				window.onload=function()
+				{
+					var gu = prompt("국어 점수 입력 :", "");
+					var eg = prompt("영어 점수 입력 :", "");
+					var su = prompt("수학 점수 입력 :", "");
+					var total = Number(gu) + Number(eg) + Number(su)
+						document.getElementById("printdiv").innerHTML=total;
+					
+					if (total / 3 >= 90)
+						document.getElementById("printdiv").innerHTML = "수";
+					else if (total / 3 >= 80)
+						document.getElementById("printdiv").innerHTML = "우";
+					else if (total / 3 >= 70)
+						document.getElementById("printdiv").innerHTML = "미";
+					else if (total / 3 >= 60)
+						document.getElementById("printdiv").innerHTML = "양";
+					else
+						document.getElementById("printdiv").innerHTML = "가";
+				}
+			</script>
+			<style type="text/css">
+				#printdiv
+				{
+					background: #654;
+					padding:30px 0;
+					text-align: center;
+				}
+			</style>
+		</head>
+		<body>
+			문제3. 사용자에게 국어, 영어, 수학 점수를 입력받아 평균을 구한 뒤 수,우,미,양,가를 구하는 프로그램<br>
+			<div id="printdiv"></div>
+			
+<!-- 			<% -->
+<!-- 				out.println("안녕 jsp 곧 java 끝나고 할꺼야... 이제 C++ 끝났어"); -->
+<!-- 			%> -->
+			
+		</body>
+	</html>
