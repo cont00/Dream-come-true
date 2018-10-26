@@ -1,0 +1,3 @@
+﻿  Ex04.c
+d:\c++\c언어 연습\chap09\ex04.c(13): warning C4715: 'doA': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Chap09.vcxproj -> D:\C++\C언어 연습\Debug\Chap09.exe
